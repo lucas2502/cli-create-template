@@ -1,38 +1,63 @@
-# CLI Template de Projeto Node + TypeScript
+# CLI Create Template
 
-Este projeto é um CLI personalizado que gera uma estrutura inicial de projeto com TypeScript, separação por camadas, e testes incluídos.
+CLI para gerar uma estrutura de projeto base com Node.js + TypeScript, pronto para testes e escalabilidade.
 
-## Instalação
-
-Clone o repositório ou baixe o `.zip`, depois instale as dependências:
-
-```bash
-npm install
+📁 Estrutura gerada:
+```
+nome-do-projeto/
+├── src/
+│   ├── entities/
+│   ├── repositories/
+│   ├── routes/
+│   ├── useCaes/
+├── .env-example
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── README.md
 ```
 
-## Uso
+---
 
-Depois de instalado com `npm link` ou via `npx` (após publicar), você pode rodar:
+## 🚀 Como usar
+
+### 1. Via `npx` direto do GitHub
+
+```bash
+npx github:lucas2502/cli-create-template nome-do-projeto
+```
+
+Isso vai clonar e executar o CLI diretamente do repositório GitHub, criando a estrutura do projeto.
+
+---
+
+### 2. Uso local com `npm link` (modo dev)
+
+Clone o projeto:
+
+```bash
+git clone https///github.com/lucas2502/cli-create-template.git
+cd cli-create-template
+npm install
+npm link
+```
+
+Depois, execute de qualquer lugar:
 
 ```bash
 criar-projeto nome-do-projeto
 ```
 
-Isso vai criar a seguinte estrutura de diretórios:
+---
 
-```
-nome-do-projeto/
-├── src/
-│   ├── controllers/
-│   ├── routes/
-│   └── index.ts
-├── tests/
-│   └── controllers/
-├── package.json
-├── tsconfig.json (você pode adicionar)
-```
-
-## Dependências
+## 📦 Dependências
 
 - [commander](https://www.npmjs.com/package/commander)
 - [chalk](https://www.npmjs.com/package/chalk)
+- [vitest](https://www.npmjs.com/package/vitest) (dev)
+
+---
+
+## 📁 Repositório
+
+[🔗 https///github.com/lucas2502/cli-create-template.git](https///github.com/lucas2502/cli-create-template.git)
