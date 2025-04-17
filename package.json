@@ -1,0 +1,19 @@
+{
+  "name": "cli-template-projeto",
+  "version": "1.0.0",
+  "description": "CLI para gerar template de projeto Node com TypeScript",
+  "bin": {
+    "criar-projeto": "./bin/create-template.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0"
+  }
+}
